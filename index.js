@@ -5,6 +5,10 @@ const Joi = require("joi");
 const app = express();
 //here we are adding a piece of middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+const logger = require("./logger");
+app.use(logger);
 
 const courses = [
 	{ id: 1, name: "course1" },

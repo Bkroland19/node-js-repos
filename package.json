@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.17.2",
+    "helmet": "^4.6.0",
     "joi": "^17.5.0"
   }
 }
